@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Enzo Sierra</title>
 
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="src/css/normalize.css">
+        <!-- CSS -->
         <link rel="stylesheet" href="src/css/bootstrap.css">
-        <script src="https://kit.fontawesome.com/5fd77854ec.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="src/css/layout.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     </head>
+
     <body>
         <header class="header">
-            <nav class="nav container">
-                <a href="https://github.com/enzogsierra" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/enzogsierra/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:enzogsierra@gmail.com"><i class="fas fa-envelope" title="Gmail"></i></a>
+            <!-- LINKS -->
+            <nav class="pt-3 d-flex justify-content-center gap-4">
+                <a href="https://github.com/enzogsierra" class="header-link-icon" target="_blank" title="Github">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/enzogsierra/" class="header-link-icon" target="_blank" title="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="mailto:enzogsierra@gmail.com" class="header-link-icon" title="Enviar email">
+                    <i class='bx bx-envelope bx-tada'></i>
+                </a>
             </nav>
             
+            <!-- HEADER -->
             <div class="header-content container">
                 <div>
                     <h1 class="header-h">
@@ -30,175 +41,193 @@
                         <span>Desarrollador web</span>
                     </h1>
 
-                    <a type="button" class="btn btn-primary my-4" href="#contacto">Contacto</a>
+                    <div class="d-flex justify-content-center gap-2 mt-4">
+                        <a href="#contacto" class="btn btn-primary w-100">
+                            <div class="d-flex justify-content-center align-items-center gap-1">
+                                <i class='bx bx-chat'></i>
+                                Contacto
+                            </div>
+                        </a>
+                        <a href="/src/assets/cv_enzosierra.pdf" class="btn btn-danger w-100" target="_blank">
+                            <div class="d-flex justify-content-center align-items-center gap-1">
+                                <i class='bx bx-spreadsheet'></i>
+                                <span>CV</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <section class="container section">
-            <h2 class="uppercase text-center mb-5">Proyectos académicos</h2>
-            <!-- <p class="text-center text-muted mb-4">Las páginas demo son solo snapshots de la página original.<br>No representan el funcionamiento original del proyecto</p> -->
 
-            <div class="projects">
-                <!--  -->
-                <div class="project pb-5">
-                    <div class="project-content">
-                        <div>
-                            <h3 class="mb-2 uppercase">Bienes raíces</h3>
-                            <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
-                        </div>
+        <!-- PROYECTS -->
+        <section class="container my-4">
+            <h2 class="text-uppercase text-center">Proyectos</h2>
 
-                        <div>
-                            <div class="project-techs mb-2">
-                                <i class="fab fa-sass icon-sass" title="SASS"></i>
-                                <i class="fab fa-node-js icon-nodejs" title="Nodejs"></i>
-                                <i class="fab fa-php icon-php" title="PHP"></i>
-                                <i class="fas fa-database icon-mysql" title="MySQL"></i>
-                                <!-- <i class="fab fa-gulp icon-gulp" title="Gulp"></i> -->
-                                <span class="icon-mvc" title="Model View Controller">MVC</span>
-                            </div>
-                            
-                            <a class="btn btn-outline-primary d-block uppercase" href="https://github.com/enzogsierra/bienes-raices" target="_blank" title="Github"><i class="fab fa-github"></i> Ver código</a>
-                        </div>
+            <!--  -->
+            <div class="row py-5 border-bottom">
+                <div class="col-lg-6 mt-3 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="mb-2 text-uppercase">Bienes raíces</h3>
+                        <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
                     </div>
 
-                    <a class="project-demo" href="https://enzogsierra.github.io/bienes-raices/" target="_blank" title="Ver demo">
-                        <img class="project-img" loading="lazy" src="src/img/page_bienes-raices.jpeg" alt="bienes raices">
-                    </a>
+                    <div>
+                        <div class="my-3 fs-1 d-flex justify-content-center gap-1">
+                            <i class='bx bxl-sass' title="SASS"></i>
+                            <i class='bx bxl-javascript' title="JavaScript"></i>
+                            <i class='bx bxl-nodejs' title="Node.js"></i>
+                            <i class='bx bxl-php' title="PHP"></i>
+                            <i class='bx bx-coin-stack' title="MySQL"></i>
+                        </div>
+
+                        <a href="https://github.com/enzogsierra/bienes-raices" class="btn btn-outline-primary w-100 text-uppercase d-flex justify-content-center align-items-center gap-1" target="_blank">
+                            <i class='bx bxl-github'></i>
+                            <span>Ver código</span>
+                        </a>
+                    </div>
                 </div>
 
-                <!--  -->
-                <!-- <div class="project pb-5">
-                    <div class="project-content">
-                        <div>
-                            <h3 class="mb-2 uppercase">WeatherApp</h3>
-                            <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
-                        </div>
-
-                        <div>
-                            <div class="project-techs mb-2">
-                                <i class="fab fa-sass icon-sass" title="SASS"></i>
-                                <i class="fab fa-node-js icon-nodejs" title="Nodejs"></i>
-                                <i class="fab fa-php icon-php" title="PHP"></i>
-                                <i class="fas fa-database icon-mysql" title="MySQL"></i>
-                                -- <i class="fab fa-gulp icon-gulp" title="Gulp"></i> --
-                                <span class="icon-mvc" title="Model View Controller">MVC</span>
-                            </div>
-                            
-                            <a class="btn btn-outline-primary d-block uppercase" href="https://github.com/enzogsierra/weatherapp" target="_blank" title="Github"><i class="fab fa-github"></i> Ver código</a>
-                        </div>
-                    </div>
-
-                    <div class="project-demo" href="#" target="_blank" title="Sin demo para mostrar">
-                        <img class="project-img" loading="lazy" src="src/img/page_weatherapp.jpg" alt="bienes raices">
-                    </div>
-                </div> -->
-
-                <!--  -->
-                <div class="project pb-5">
-                    <div class="project-content">
-                        <div>
-                            <h3 class="mb-2 uppercase">BarberShop App</h3>
-                            <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
-                        </div>
-
-                        <div>
-                            <div class="project-techs mb-2">
-                                <i class="fab fa-sass icon-sass" title="SASS"></i>
-                                <i class="fab fa-node-js icon-nodejs" title="Nodejs"></i>
-                                <i class="fab fa-php icon-php" title="PHP"></i>
-                                <i class="fas fa-database icon-mysql" title="MySQL"></i>
-                                <!-- <i class="fab fa-gulp icon-gulp" title="Gulp"></i> -->
-                                <span class="icon-mvc" title="Model View Controller">MVC</span>
-                            </div>
-                            
-                            <a class="btn btn-outline-primary d-block uppercase" href="https://github.com/enzogsierra/barbershop" target="_blank" title="Github"><i class="fab fa-github"></i> Ver código</a>
-                        </div>
-                    </div>
-
-                    <a class="project-demo" href="https://enzogsierra.github.io/barbershop/" target="_blank" title="Ver demo">
-                        <img class="project-img" loading="lazy" src="src/img/page_barbershop.jpg" alt="bienes raices">
+                <div class="col-lg-6 mt-3">
+                    <a href="https://enzogsierra.github.io/bienes-raices/" target="_blank" title="Ir a página demo">
+                        <img class="img-demoPage" loading="lazy" src="src/img/page_bienes-raices.jpg" alt="bienes raices">
                     </a>
                 </div>
+            </div>
 
-                <!--  -->
-                <div class="project pb-5">
-                    <div class="project-content">
-                        <div>
-                            <h3 class="mb-2 uppercase">Blog de Café</h3>
-                            <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
-                        </div>
-
-                        <div>
-                            <div class="project-techs mb-2">
-                                <i class="fab fa-sass icon-sass" title="SASS"></i>
-                                <i class="fab fa-node-js icon-nodejs" title="Nodejs"></i>
-                                <i class="fab fa-php icon-php" title="PHP"></i>
-                                <i class="fas fa-database icon-mysql" title="MySQL"></i>
-                                <!-- <i class="fab fa-gulp icon-gulp" title="Gulp"></i> -->
-                                <span class="icon-mvc" title="Model View Controller">MVC</span>
-                            </div>
-                            
-                            <a class="btn btn-outline-primary d-block uppercase" href="https://github.com/enzogsierra/blogdecafe" target="_blank" title="Github"><i class="fab fa-github"></i> Ver código</a>
-                        </div>
+            <!--  -->
+            <div class="row py-5 border-bottom">
+                <div class="col-lg-6 mt-3 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="mb-2 text-uppercase">BarberShop App</h3>
+                        <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
                     </div>
 
-                    <a class="project-demo" href="https://enzogsierra.github.io/blogdecafe/" target="_blank" title="Ver demo">
-                        <img class="project-img" loading="lazy" src="src/img/page_blogdecafe.jpg" alt="bienes raices">
-                    </a>
+                    <div>
+                        <div class="my-3 fs-1 d-flex justify-content-center gap-1">
+                            <i class='bx bxl-sass' title="SASS"></i>
+                            <i class='bx bxl-javascript' title="JavaScript"></i>
+                            <i class='bx bxl-nodejs' title="Node.js"></i>
+                            <i class='bx bxl-php' title="PHP"></i>
+                            <i class='bx bx-coin-stack' title="MySQL"></i>
+                        </div>
+
+                        <a href="https://github.com/enzogsierra/barbershop" class="btn btn-outline-primary w-100 text-uppercase d-flex justify-content-center align-items-center gap-1" target="_blank">
+                            <i class='bx bxl-github'></i>
+                            <span>Ver código</span>
+                        </a>
+                    </div>
                 </div>
 
-                <!--  -->
-                <div class="project pb-5">
-                    <div class="project-content">
-                        <div>
-                            <h3 class="mb-2 uppercase">Festival de Música</h3>
-                            <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
-                        </div>
+                <div class="col-lg-6 mt-3">
+                    <a href="https://enzogsierra.github.io/barbershop/" target="_blank" title="Ir a página demo">
+                        <img class="img-demoPage" loading="lazy" src="src/img/page_barbershop.jpg" alt="bienes raices">
+                    </a>
+                </div>
+            </div>
 
-                        <div>
-                            <div class="project-techs mb-2">
-                                <i class="fab fa-sass icon-sass" title="SASS"></i>
-                                <i class="fab fa-node-js icon-nodejs" title="Nodejs"></i>
-                                <i class="fab fa-php icon-php" title="PHP"></i>
-                                <i class="fas fa-database icon-mysql" title="MySQL"></i>
-                                <!-- <i class="fab fa-gulp icon-gulp" title="Gulp"></i> -->
-                                <span class="icon-mvc" title="Model View Controller">MVC</span>
-                            </div>
-                            
-                            <a class="btn btn-outline-primary d-block uppercase" href="https://github.com/enzogsierra/festival-de-musica" target="_blank" title="Github"><i class="fab fa-github"></i> Ver código</a>
-                        </div>
+            <!--  -->
+            <div class="row py-5 border-bottom">
+                <div class="col-lg-6 mt-3 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="mb-2 text-uppercase">Blog de Café</h3>
+                        <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
                     </div>
 
-                    <a class="project-demo" href="https://enzogsierra.github.io/festival-de-musica/" target="_blank" title="Ver demo">
-                        <img class="project-img" loading="lazy" src="src/img/page_festival-de-musica.jpg" alt="bienes raices">
+                    <div>
+                        <div class="my-3 fs-1 d-flex justify-content-center gap-1">
+                            <i class='bx bxl-sass' title="SASS"></i>
+                            <i class='bx bxl-javascript' title="JavaScript"></i>
+                            <i class='bx bxl-nodejs' title="Node.js"></i>
+                            <i class='bx bxl-php' title="PHP"></i>
+                            <i class='bx bx-coin-stack' title="MySQL"></i>
+                        </div>
+
+                        <a href="https://github.com/enzogsierra/blogdecafe" class="btn btn-outline-primary w-100 text-uppercase d-flex justify-content-center align-items-center gap-1" target="_blank">
+                            <i class='bx bxl-github'></i>
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-3">
+                    <a href="https://enzogsierra.github.io/blogdecafe/" target="_blank" title="Ir a página demo">
+                        <img class="img-demoPage" loading="lazy" src="src/img/page_blogdecafe.jpg" alt="bienes raices">
                     </a>
                 </div>
-                <!--  -->
+            </div>
+
+            <!--  -->
+            <div class="row py-5 border-bottom">
+                <div class="col-lg-6 mt-3 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="mb-2 text-uppercase">Festival de Música</h3>
+                        <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
+                    </div>
+
+                    <div>
+                        <div class="my-3 fs-1 d-flex justify-content-center gap-1">
+                            <i class='bx bxl-sass' title="SASS"></i>
+                            <i class='bx bxl-javascript' title="JavaScript"></i>
+                            <i class='bx bxl-nodejs' title="Node.js"></i>
+                            <i class='bx bxl-php' title="PHP"></i>
+                            <i class='bx bx-coin-stack' title="MySQL"></i>
+                        </div>
+
+                        <a href="https://github.com/enzogsierra/festival-de-musica" class="btn btn-outline-primary w-100 text-uppercase d-flex justify-content-center align-items-center gap-1" target="_blank">
+                            <i class='bx bxl-github'></i>
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-3">
+                    <a href="https://enzogsierra.github.io/festival-de-musica/" target="_blank" title="Ir a página demo">
+                        <img class="img-demoPage" loading="lazy" src="src/img/page_festival-de-musica.jpg" alt="bienes raices">
+                    </a>
+                </div>
             </div>
         </section>
 
 
-        <!--  -->
-        <section class="container section" id="contacto">
-            <h2 class="text-center uppercase">Contacto</h2>
+        <!-- CONTACT -->
+        <section class="container my-4" id="contacto">
+            <h2 class="text-center text-uppercase">Contacto</h2>
 
-            <form class="contact-form" action="/" method="POST">
-                <legend>Ingresa tus datos de contacto</legend>
-                
-                <input type="email" class="form-control mb-2" id="email" placeholder="example@mail.com">
-                <input type="text" class="form-control mb-2" placeholder="Nombre y apellido">
-                <input type="text" class="form-control mb-2" placeholder="Asunto">
-                <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
-            
-                <input type="submit" class="btn btn-primary my-2" value="Enviar">
-            </form>
+            <div class="contact-form">
+                <form action="/" method="POST">                
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="subject" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
         </section>
 
 
-        <!--  -->
-        <footer class="footer">
-            <p class="text-center my-0">Creado y diseñado por mí</p>
+        <!--  FOOTER -->
+        <footer class="footer py-4 text-white">
+            <p class="text-center m-0">Creado y diseñado por mí :) &copy; 2022</p>
         </footer>
+
+
+        <!-- Scripts -->
+        <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     </body>
 </html>
