@@ -87,6 +87,26 @@ body
     transform: scale(1.025);
 }
 
+/* MISC PROJECTS */
+.projects-misc
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+@media(min-width: 768px)
+{
+    .projects-misc {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width: 1200px)
+{
+    .projects-misc {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 /* CONTACT */
 .contact-form

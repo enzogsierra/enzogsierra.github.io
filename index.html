@@ -20,18 +20,30 @@
 
     <body>
         <header class="header">
-            <!-- LINKS -->
-            <nav class="pt-3 d-flex justify-content-center gap-4">
-                <a href="https://github.com/enzogsierra" class="header-link-icon" target="_blank" title="Github">
-                    <i class='bx bxl-github'></i>
-                </a>
-                <a href="https://www.linkedin.com/in/enzogsierra/" class="header-link-icon" target="_blank" title="LinkedIn">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-                <a href="mailto:enzogsierra@gmail.com" class="header-link-icon" title="Enviar email">
-                    <i class='bx bx-envelope bx-tada'></i>
-                </a>
-            </nav>
+            <div class="container pt-3 d-flex justify-content-between">
+                <!-- LANG -->
+                <div>
+
+                </div>
+
+                <!-- LINKS -->
+                <nav class="d-flex justify-content-center gap-4">
+                    <a href="https://github.com/enzogsierra" class="header-link-icon" target="_blank" title="Github">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/enzogsierra/" class="header-link-icon" target="_blank" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="mailto:enzogsierra@gmail.com" class="header-link-icon" title="Enviar email">
+                        <i class='bx bx-envelope bx-tada'></i>
+                    </a>
+                </nav>
+
+                <!-- Misc -->
+                <div>
+
+                </div>
+            </div>
             
             <!-- HEADER -->
             <div class="header-content container">
@@ -62,14 +74,190 @@
 
         <!-- PROYECTS -->
         <section class="container my-4">
-            <h2 class="text-uppercase text-center">Proyectos</h2>
+            <h2 class="mb-0 text-uppercase text-center">Proyectos con Java Spring Boot</h2>
+
+            <!--  -->
+            <div class="row py-5 border-bottom">
+                <div class="col mt-3 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="mb-2 text-uppercase text-center fw-bold">e-Commerce</h3>
+                        <p class="my-0">
+                            Página e-commerce para la compra y venta de productos en línea. Con sistema de registro e inicio de sesión, buscar productos, añadirlos al carrito y realizar la compra.
+                            <br>
+                            Cuenta con panel administrativo para crear, editar y eliminar productos, ver todas las compras hechas y ver la lista de todos los usuarios.
+                            <br>
+                            <br>
+                            <span class="fw-bold">Spring dependencies:</span> DevTools, Thymeleaf, MySQL Driver, JPA, Validation, Security.
+                         </p>
+                    </div>
+
+                    <div>
+                        <div class="my-3 d-flex flex-wrap justify-content-center gap-2">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-bootstrap fs-1' title="Bootstrap"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">Bootstrap</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-javascript fs-1' title="JavaScript"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">JavaScript</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-spring-boot fs-1' title="Java Spring Boot"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">Spring Boot</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxs-data fs-1' title="MySQL"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">MySQL</span></h6>
+                            </div>
+                        </div>
+
+                        <a href="https://github.com/enzogsierra/ecommerce-spring" class="btn btn-outline-primary w-100 text-uppercase d-flex justify-content-center align-items-center gap-1" target="_blank">
+                            <i class='bx bxl-github'></i>
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col mt-3">
+                    <a href="https://enzogsierra.github.io/ecommerce-spring/" target="_blank" title="Ir a página demo">
+                        <img class="img-demoPage" loading="lazy" src="src/img/page_ecommerce-spring.jpg" alt="homepage bienes raices">
+                    </a>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="row py-5 border-bottom">
+                <div class="col mt-3 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="mb-2 text-uppercase text-center fw-bold">Contact Book</h3>
+                        <p class="my-0">
+                            Aplicación web para el manejo de una agenda de contactos. 
+                            <br>
+                            Cuenta solo con la homepage, donde los contactos se pueden crear, leer, editar, eliminar y buscar de forma completamente asíncrona.
+                            Tiene la opción de agregar una foto (avatar) para el contacto.
+                            <br>
+                            <br>
+                            <span class="fw-bold">Spring dependencies:</span> DevTools, Thymeleaf, MySQL Driver, JPA, Validation.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="my-3 d-flex flex-wrap justify-content-center gap-2">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-bootstrap fs-1' title="Bootstrap"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">Bootstrap</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-javascript fs-1' title="JavaScript"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">JavaScript</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bx-cloud fs-1' title="API Rest"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">API Rest</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bx-repost fs-1' title="AJAX"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">AJAX</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-spring-boot fs-1' title="Java Spring Boot"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">Spring Boot</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxs-data fs-1' title="MySQL"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">MySQL</span></h6>
+                            </div>
+                        </div>
+
+                        <a href="https://github.com/enzogsierra/contactbook" class="btn btn-outline-primary w-100 text-uppercase d-flex justify-content-center align-items-center gap-1" target="_blank">
+                            <i class='bx bxl-github'></i>
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col mt-3">
+                    <a href="https://enzogsierra.github.io/contactbook/" target="_blank" title="Ir a página demo">
+                        <img class="img-demoPage" loading="lazy" src="src/img/page_contactbook.jpg" alt="homepage bienes raices">
+                    </a>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="row py-5 border-bottom">
+                <div class="col mt-3 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="mb-2 text-uppercase text-center fw-bold">COVID-Tracker</h3>
+                        <p class="my-0">
+                            Página web que muestra los casos de COVID-19 alrededor del mundo y por países.
+                            Da un reporte del total de casos y casos ocurridos en el último día.
+                            <br>
+                            Cuenta con un buscador de países y la tabla se puede ordenar según se desee (por país, por cantidad de casos totales o por cantidad de casos en el último día)
+                            <br>
+                            <br>
+                            <span class="fw-bold">Spring dependencies:</span> DevTools, Thymeleaf, Commons CSV.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="my-3 d-flex flex-wrap justify-content-center gap-2">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-bootstrap fs-1' title="Bootstrap"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">Bootstrap</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-javascript fs-1' title="JavaScript"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">JavaScript</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-spring-boot fs-1' title="Java Spring Boot"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">Spring Boot</span></h6>
+                            </div>
+                        </div>
+
+                        <a href="https://github.com/enzogsierra/covid-tracker" class="btn btn-outline-primary w-100 text-uppercase d-flex justify-content-center align-items-center gap-1" target="_blank">
+                            <i class='bx bxl-github'></i>
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col mt-3">
+                    <a href="https://enzogsierra.github.io/covid-tracker/" target="_blank" title="Ir a página demo">
+                        <img class="img-demoPage" loading="lazy" src="src/img/page_covid-tracker.jpg" alt="homepage bienes raices">
+                    </a>
+                </div>
+            </div>
+
+
+            <!--  -->
+            <h2 class="mt-5 mb-0 text-uppercase text-center">Proyectos con PHP</h2>
 
             <!--  -->
             <div class="row py-5 border-bottom">
                 <div class="col mt-3 d-flex flex-column justify-content-between">
                     <div>
                         <h3 class="mb-2 text-uppercase text-center fw-bold">Bienes Raíces</h3>
-                        <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
+                        <p class="my-0">
+                            Página web para la venta de propiedades e inmuebles.
+                            La página principal muestra información sobre la empresa, las propiedades en venta, contacto y blog.
+                            El apartado administrativo te permite crear, ver, editar y eliminar propiedades y vendedores.
+                            El formulario de contacto envía emails al propietario de la página con los datos de contacto.
+                            Utiliza el patrón MVC.
+                            <br>
+                            <br>
+                            <b>Composer:</b> Intervention Image, PHPMailer
+                        </p>
                     </div>
 
                     <div>
@@ -95,7 +283,7 @@
                             </div>
 
                             <div class="d-flex flex-column align-items-center">
-                                <i class='bx bx-coin-stack fs-1' title="MySQL"></i>
+                                <i class='bx bxs-data fs-1' title="MySQL"></i>
                                 <h6 class="m-0"><span class="badge bg-secondary">MySQL</span></h6>
                             </div>
 
@@ -123,8 +311,73 @@
             <div class="row py-5 border-bottom">
                 <div class="col mt-3 d-flex flex-column justify-content-between">
                     <div>
+                        <h3 class="mb-2 text-uppercase text-center fw-bold">GDLWEBCAMP</h3>
+                        <p class="my-0">
+                            Página web anunciando una conferencia de diseño web.
+                            Muestra los eventos y fechas, invitados, un mapa del lugar, testimoniales, etc.
+                            Los usuarios pueden comprar tickets, elegir a los eventos que quieran asistir, seleccionar regalos, etc.
+                            Utiliza patrón MVC.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="my-3 d-flex flex-wrap justify-content-center gap-2">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-sass fs-1' title="SASS"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">SASS</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-javascript fs-1' title="JavaScript"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">JavaScript</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-jquery fs-1' title="JQuery"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">JQuery</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-nodejs fs-1' title="Node.js"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">Node.js</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxl-php fs-1' title="PHP"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">PHP</span></h6>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <i class='bx bxs-data fs-1' title="MySQL"></i>
+                                <h6 class="m-0"><span class="badge bg-secondary">MySQL</span></h6>
+                            </div>
+                        </div>
+
+                        <a href="https://github.com/enzogsierra/gdlwebcamp" class="btn btn-outline-primary w-100 text-uppercase d-flex justify-content-center align-items-center gap-1" target="_blank">
+                            <i class='bx bxl-github'></i>
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col mt-3">
+                    <a href="https://enzogsierra.github.io/gdlwebcamp/" target="_blank" title="Ir a página demo">
+                        <img class="img-demoPage" loading="lazy" src="src/img/page_gdlwebcamp.jpg" alt="homepage bienes raices">
+                    </a>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="row py-5 border-bottom">
+                <div class="col mt-3 d-flex flex-column justify-content-between">
+                    <div>
                         <h3 class="mb-2 text-uppercase text-center fw-bold">Barbershop App</h3>
-                        <p class="my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sequi tenetur earum magni, iste perspiciatis, quidem porro laboriosam impedit, assumenda distinctio nostrum veniam odit nemo nulla ad aperiam blanditiis neque.</p>
+                        <p class="my-0">
+                            Aplicación web de una barbería.
+                            Los usuarios pueden seleccionar servicios y una fecha para hacer una reservación.
+                            El panel administrativo permite ver las reservaciones hechas con fecha y datos del cliente, crear, editar y eliminar servicios.
+                            Cuenta con sistema de inicio de sesión, registro con verificación por email (tokens), recuperación de contraseña, etc.
+                        </p>
                     </div>
 
                     <div>
@@ -155,7 +408,7 @@
                             </div>
 
                             <div class="d-flex flex-column align-items-center">
-                                <i class='bx bx-coin-stack fs-1' title="MySQL"></i>
+                                <i class='bx bxs-data fs-1' title="MySQL"></i>
                                 <h6 class="m-0"><span class="badge bg-secondary">MySQL</span></h6>
                             </div>
 
@@ -179,7 +432,11 @@
                 </div>
             </div>
 
-            <!--  -->
+<!--             
+            !--  --
+            <h2 class="mt-5 mb-0 text-uppercase text-center">Otros proyectos</h2>
+
+            !--  --
             <div class="row py-5 border-bottom">
                 <div class="col mt-3 d-flex flex-column justify-content-between">
                     <div>
@@ -229,7 +486,7 @@
                 </div>
             </div>
 
-            <!--  -->
+            !--  --
             <div class="row py-5 border-bottom">
                 <div class="col mt-3 d-flex flex-column justify-content-between">
                     <div>
@@ -268,11 +525,84 @@
                     </a>
                 </div>
             </div>
+
+
+            !--  --
+            <div class="projects-misc py-5">
+                <div class="card">
+                    <img src="src/img/page_blogdecafe.jpg" class="card-img-top border-bottom" alt="blog de cafe homepage">
+
+                    <div class="card-body d-flex flex-column justify-content-between gap-2">
+                        <div>
+                            <h5 class="card-title">Blog de Café</h5>
+
+                            <p class="card-text"></p>
+                        </div>
+
+                        <div class="d-flex flex-wrap justify-content-start gap-2">
+                            <a href="https://github.com/enzogsierra/blogdecafe" class="btn btn-primary d-flex justify-content-center align-items-center gap-1" target="_blank">
+                                <i class='bx bxl-github'></i>
+                                <span>Código</span>
+                            </a>
+                            <a href="https://github.com/enzogsierra/blogdecafe" class="btn btn-outline-dark d-flex justify-content-center align-items-center gap-1" target="_blank">
+                                <i class='bx bx-world'></i>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="src/img/page_blogdecafe.jpg" class="card-img-top border-bottom" alt="blog de cafe homepage">
+
+                    <div class="card-body d-flex flex-column justify-content-between gap-2">
+                        <div>
+                            <h5 class="card-title">Blog de Café</h5>
+
+                            <p class="card-text"></p>
+                        </div>
+
+                        <div class="d-flex flex-wrap justify-content-start gap-2">
+                            <a href="https://github.com/enzogsierra/blogdecafe" class="btn btn-primary d-flex justify-content-center align-items-center gap-1" target="_blank">
+                                <i class='bx bxl-github'></i>
+                                <span>Código</span>
+                            </a>
+                            <a href="https://github.com/enzogsierra/blogdecafe" class="btn btn-outline-dark d-flex justify-content-center align-items-center gap-1" target="_blank">
+                                <i class='bx bx-world'></i>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="src/img/page_blogdecafe.jpg" class="card-img-top border-bottom" alt="blog de cafe homepage">
+
+                    <div class="card-body d-flex flex-column justify-content-between gap-2">
+                        <div>
+                            <h5 class="card-title">Blog de Café</h5>
+
+                            <p class="card-text"></p>
+                        </div>
+
+                        <div class="d-flex flex-wrap justify-content-start gap-2">
+                            <a href="https://github.com/enzogsierra/blogdecafe" class="btn btn-primary d-flex justify-content-center align-items-center gap-1" target="_blank">
+                                <i class='bx bxl-github'></i>
+                                <span>Código</span>
+                            </a>
+                            <a href="https://github.com/enzogsierra/blogdecafe" class="btn btn-outline-dark d-flex justify-content-center align-items-center gap-1" target="_blank">
+                                <i class='bx bx-world'></i>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </section>
 
 
         <!-- CONTACT -->
-        <section class="container my-4" id="contacto">
+        <section class="container my-5" id="contacto">
             <h2 class="text-center text-uppercase">Contacto</h2>
 
             <div class="contact-form">
@@ -309,6 +639,7 @@
 
 
         <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     </body>
 </html>
