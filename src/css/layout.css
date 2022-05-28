@@ -9,6 +9,8 @@
 body
 {
     font-family: 'Montserrat', sans-serif;
+    transition: text-color .3s ease;
+    transition: background-color .3s ease;
 }
 
 
@@ -73,9 +75,9 @@ body
     width: 100%;
     border-radius: 8px;
     
-    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);
 
     transition: all .3s ease;
 }
