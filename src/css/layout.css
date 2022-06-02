@@ -13,6 +13,19 @@ body
     transition: background-color .3s ease;
 }
 
+#darkMode-btn
+{
+    color:#ffffff; 
+    cursor: pointer;
+    transition: all .25s ease;
+}
+#darkMode-btn:hover
+{
+    color: grey;
+    transform: scale(1.2);
+}
+
+
 
 /* HEADER */
 .header

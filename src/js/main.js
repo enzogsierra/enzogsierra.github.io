@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () =>
     darkModeBtn.addEventListener("click", onDarkMode);
 
     // Demo page alert
-    const demoPage = document.querySelectorAll("a>img.img-demoPage");
+    const demoPage = document.querySelectorAll("a:not([data-fancybox])>img.img-demoPage");
     demoPage.forEach(page =>
     {
         page.addEventListener("click", onDemoPageClick);
