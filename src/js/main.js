@@ -56,6 +56,13 @@ function onDarkMode()
         btn.classList.toggle("btn-outline-dark");
         btn.classList.toggle("btn-outline-light");
     });
+
+
+    // Contact section
+    document.querySelectorAll(".contact-img-logo-container").forEach(btn => 
+    { 
+        btn.classList.toggle("border-secondary");
+    });
 }
 
 
@@ -70,7 +77,7 @@ function onDemoPageClick(e)
     {
         icon: 'info',
         title: 'Antes de...',
-        text: "Las páginas demo son solo snapshots visuales de la página original, no intentan imitar la funcionalidad de la misma.",
+        text: "Algunas páginas demo son solo snapshots visuales, no intentan imitar la funcionalidad de la misma.",
         showCancelButton: false,
         confirmButtonColor: '#3085d6',
         confirmButtonText: 'Entendido'
