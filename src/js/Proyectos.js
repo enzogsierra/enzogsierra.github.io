@@ -30,7 +30,7 @@ const mainProjects =
 [
     {
         nombre: "DyETechnology",
-        descripcion: "Proyecto final de la carrera, donde, en un grupo de 3 estudiantes, desarrollamos un punto de ventas para un negocio local. El objetivo fue atender la necesidad de un cliente de poder llevar un registro de sus productos, ingresos, egresos, catálogos, etc.\nIngresé al proyecto en mitad de su desarrollo. Mi labor estuvo enfocado en el backend, donde tuve que solucionar errores del sistema, corregir bugs, añadir nuevas características y mejorar la calidad general del código. Así como también aportar ideas y ayudar a mis compañeros las demás áreas del proyecto.",
+        descripcion: "Proyecto final de la carrera, donde, en un grupo de 3 estudiantes, desarrollamos un punto de ventas para un negocio local. El objetivo fue atender la necesidad de un cliente de poder llevar un registro de sus productos, ingresos, egresos, catálogos, etc.\nIngresé al proyecto en mitad de su desarrollo. Mi labor estuvo enfocado en el backend, donde tuve que solucionar errores del sistema, corregir bugs, añadir nuevas características y mejorar la calidad general del código. Así como también aportar ideas y ayudar a mis compañeros en las demás áreas del proyecto.",
         imagenes: ["dyetechnology_1.jpg", "dyetechnology_1.jpg", "dyetechnology_3.jpg"],
         stacks: [stacks.springboot, stacks.mysql, stacks.bootstrap, stacks.javascript, stacks.jquery],
         repo: "https://github.com/AlexanderTHC/DyETechnology_v1.0",
@@ -43,11 +43,11 @@ const mainProjects =
         repo: "https://github.com/enzogsierra/ecommerce",
     },
     {
-        nombre: "Contactbook",
-        descripcion: "Aplicación web full stack implementando React con Spring Boot. Trata de una agenda de contactos que envía peticiones a un controlador (RESTful API) para crear, editar o eliminar contactos. Mientras el backend se encarga de controlar las peticiones, entidades, validaciones, errores de excepción, y manejar toda la información necesaria para devolver una respuesta al cliente. La hice para reforzar mis conocimientos en React.",
-        imagenes: ["contactbook_1.jpg", "contactbook_2.jpg"],
-        stacks: [stacks.springboot, stacks.nodejs, stacks.react, stacks.mysql, stacks.javascript, stacks.bootstrap],
-        repo: "https://github.com/enzogsierra/contactbook",
+        nombre: "Clinica Dental",
+        descripcion: "Software diseñado específicamente para una clínica dental.\nPermite al cliente poder visualizar y agendar turnos de una manera rápida e intuitiva, ver una lista de los pacientes, sus turnos agendados, tratamientos, pagos, financiamientos, entre otras muchas características.\nEstá construida en Spring Boot, pero utiliza Electron.js para ejecutarse como una aplicación de escritorio y funcionar sin necesidad de Internet.",
+        imagenes: ["clinicadental_1.jpg", "clinicadental_2.jpg", "clinicadental_3.jpg", "clinicadental_4.jpg", "clinicadental_5.jpg", "clinicadental_6.jpg", "clinicadental_7.jpg"],
+        stacks: [stacks.springboot, stacks.mysql, stacks.javascript, stacks.jquery, stacks.bootstrap],
+        repo: "https://github.com/enzogsierra/clinica-dental",
     },
     {
         nombre: "Gymanagr",
@@ -57,25 +57,18 @@ const mainProjects =
         repo: "https://github.com/enzogsierra/gymanagr",
     },
     {
-        nombre: "Clinica Dental",
-        descripcion: "Software diseñado específicamente para una clínica dental.\nPermite al cliente poder visualizar y agendar turnos de una manera rápida e intuitiva, ver una lista de los pacientes, sus turnos agendados, tratamientos, pagos, financiamientos, entre otras muchas características.\nEstá construida en Spring Boot, pero utiliza Electron.js para ejecutarse como una aplicación de escritorio y funcionar sin necesidad de Internet.",
-        imagenes: ["clinicadental_1.jpg", "clinicadental_2.jpg", "clinicadental_3.jpg", "clinicadental_4.jpg", "clinicadental_5.jpg", "clinicadental_6.jpg", "clinicadental_7.jpg"],
-        stacks: [stacks.springboot, stacks.mysql, stacks.javascript, stacks.jquery, stacks.bootstrap],
+        nombre: "Contactbook",
+        descripcion: "Aplicación web full stack implementando React con Spring Boot. Trata de una agenda de contactos que envía peticiones a un controlador (RESTful API) para crear, editar o eliminar contactos. Mientras el backend se encarga de controlar las peticiones, entidades, validaciones, errores de excepción, y manejar toda la información necesaria para devolver una respuesta al cliente. La hice para reforzar mis conocimientos en React.",
+        imagenes: ["contactbook_1.jpg", "contactbook_2.jpg"],
+        stacks: [stacks.springboot, stacks.nodejs, stacks.react, stacks.mysql, stacks.javascript, stacks.bootstrap],
         repo: "https://github.com/enzogsierra/contactbook",
     },
     {
-        nombre: "Bienes Raíces",
-        descripcion: "Aplicación web para la compraventa de propiedades e inmuebles. La página principal muestra información, propiedades en venta y sus características, contacto y blog. Con sistema de registro y panel administrativo, entre otros.",
+        nombre: "Cinetrailer",
+        descripcion: "Sitio web para ver los próximos estrenos de películas. Muestra el póster de la película, su sinposis, fecha de estreno, los géneros al que pertenece y te permite filtrar películas por género. Incluye un botón para ver el trailer de la película dentro del mismo sitio web. El panel administrativo te permite crear, editar y eliminar películas, además de poder subir imágenes y almacenarlas directamente en el sitio.",
         stacks: [stacks.springboot, stacks.mysql, stacks.javascript, stacks.css],
-        imagenes: ["/bienes-raices.jpg"],
-        repo: "https://github.com/enzogsierra/bienes-raices",
-    },
-    {
-        nombre: "GDLWEBCAMP",
-        descripcion: "Página web anunciando una conferencia de diseño web. Muestra los eventos y fechas, invitados, un mapa del lugar, testimoniales, conteo regresivo hasta el evento, etc. Los usuarios pueden seleccionar tickets, elegir a los eventos que quieran asistir, seleccionar regalos, entre otros.",
-        stacks: [stacks.springboot, stacks.mysql, stacks.javascript, stacks.jquery, stacks.css],
-        pagina: {url: "https://enzogsierra.github.io/gdlwebcamp/", imagen: "/gdlwebcamp.jpg"},
-        repo: "https://github.com/enzogsierra/bienes-raices",
+        pagina: {url: "https://enzogsierra.github.io/cinetrailer-spring/", imagen: "/cinetrailer.jpg"},
+        repo: "https://github.com/enzogsierra/cinetrailer-spring",
     },
     {
         nombre: "Barbershop",
@@ -85,11 +78,18 @@ const mainProjects =
         repo: "https://github.com/enzogsierra/barbershop",
     },
     {
-        nombre: "Cinetrailer",
-        descripcion: "Sitio web para ver los próximos estrenos de películas. Muestra el póster de la película, su sinposis, fecha de estreno, los géneros al que pertenece y te permite filtrar películas por género. Incluye un botón para ver el trailer de la película dentro del mismo sitio web. El panel administrativo te permite crear, editar y eliminar películas, además de poder subir imágenes y almacenarlas directamente en el sitio.",
+        nombre: "GDLWEBCAMP",
+        descripcion: "Sitio que anuncia una conferencia de diseño web. Muestra un resumen de los eventos disponibles, charlas, fechas y los invitados especiales. Integra varios plugins de JQuery para mejorar la experiencia de usuario, tales como un mapa interactivo del evento, un contador regresivo, una galería con fotos de los invitados, etc. El diseño y la maquetación de la página está escrito completamente desde 0.",
+        stacks: [stacks.springboot, stacks.mysql, stacks.javascript, stacks.jquery, stacks.css],
+        pagina: {url: "https://enzogsierra.github.io/gdlwebcamp/", imagen: "/gdlwebcamp.jpg"},
+        repo: "https://github.com/enzogsierra/gdlwebcamp",
+    },
+    {
+        nombre: "Bienes Raíces",
+        descripcion: "Aplicación web para la compraventa de propiedades e inmuebles. La página principal muestra las principales propiedades anunciadas, información de la empresa, un blog, etc. Cuenta con vistas para ver toda la información de una propiedad y un formulario de contacto. Además incluye panel administrativo para controlar las propiedades y ver los formularios de contacto enviados.",
         stacks: [stacks.springboot, stacks.mysql, stacks.javascript, stacks.css],
-        pagina: {url: "https://enzogsierra.github.io/cinetrailer-spring/", imagen: "/cinetrailer.jpg"},
-        repo: "https://github.com/enzogsierra/cinetrailer-spring",
+        pagina: {url: "https://enzogsierra.github.io/bienes-raices-php/", imagen: "bienes-raices.jpg"},
+        repo: "https://github.com/enzogsierra/bienes-raices",
     },
 ];
 
