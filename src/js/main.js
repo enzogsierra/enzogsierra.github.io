@@ -1,18 +1,4 @@
-document.addEventListener("DOMContentLoaded", () =>
-{
-    // Dark mode handler
-    const darkModeBtn = document.querySelector("#darkMode-btn");
-    darkModeBtn.addEventListener("click", onDarkMode);
-
-    // Demo page alert
-    const demoPage = document.querySelectorAll("a:not([data-fancybox])>img.img-demoPage");
-    demoPage.forEach(page =>
-    {
-        page.addEventListener("click", onDemoPageClick);
-    });
-});
-
-
+// Cuando hace click en el button de darkmode
 function onDarkMode()
 {
     // Main
@@ -21,18 +7,17 @@ function onDarkMode()
     body.classList.toggle("text-white");
     
 
-    // Inputs & textareas
-    document.querySelectorAll("input, textarea").forEach(input =>
+    // Muted texts
+    document.querySelectorAll(".text-muted").forEach(input =>
     {
-        input.classList.toggle("bg-dark");
-        input.classList.toggle("border-secondary");
+        input.classList.toggle("text-muted");
     });
 
 
     // Cards
     document.querySelectorAll(".card").forEach(card =>
     {
-        card.classList.toggle("bg-dark");
+        card.classList.toggle("text-bg-dark");
         card.classList.toggle("border-secondary");
     });
 
@@ -56,21 +41,16 @@ function onDarkMode()
         btn.classList.toggle("btn-outline-dark");
         btn.classList.toggle("btn-outline-light");
     });
-
-
-    // Contact section
-    document.querySelectorAll(".contact-img-logo-container").forEach(btn => 
-    { 
-        btn.classList.toggle("border-secondary");
-    });
 }
 
 
+// Cuando hace click para abrir una pagina demo
 let demoPageAlert = false;
-function onDemoPageClick(e)
+function onDemoPageClick()
 {
     if(demoPageAlert) return;
 
+    const e = this.event;
     e.preventDefault();
 
     Swal.fire(
@@ -79,13 +59,15 @@ function onDemoPageClick(e)
         title: 'Antes de...',
         text: "Algunas páginas demo son solo snapshots visuales, no intentan imitar la funcionalidad de la misma.",
         showCancelButton: false,
-        confirmButtonColor: '#3085d6',
         confirmButtonText: 'Entendido'
     })
     .then((result) =>
     {
-        const link = e.target.parentElement.getAttribute("href");
-        window.open(link, ":blank");
+        if(result.isConfirmed)
+        {
+            const link = e.target.parentElement.getAttribute("href");
+            window.open(link, ":blank");
+        }
     });
 
     demoPageAlert = true;

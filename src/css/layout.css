@@ -1,10 +1,5 @@
-/* */
-:root
-{
-    --color-primary: #000023;
-    --color-secondary: #d667ff;
-    --color-mute: #a1a1a1;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 
 body
 {
@@ -13,21 +8,8 @@ body
     transition: background-color .3s ease;
 }
 
-#darkMode-btn
-{
-    color:#ffffff; 
-    cursor: pointer;
-    transition: all .25s ease;
-}
-#darkMode-btn:hover
-{
-    color: grey;
-    transform: scale(1.2);
-}
 
-
-
-/* HEADER */
+/* header */
 .header
 {
     background-image: url("../img/cover.png");
@@ -35,7 +17,19 @@ body
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 80vh;
+}
+
+
+#darkMode-btn
+{
+    color:#ffffff; 
+    cursor: pointer;
+    transition: all .2s ease;
+}
+#darkMode-btn:hover
+{
+    color: dimgrey;
+    transform: scale(1.2);
 }
 
 .header-link-icon
@@ -55,38 +49,16 @@ body
     background: #149ddd;
 }
 
-.header-content
-{
-    width: 100%;
-    height: 80%;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.header-h
-{
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: white;
-    font-weight: bold;
-}
-.header-h span
-{
-    font-size: 1.4rem;
-    color: var(--color-secondary);
-    display: block;
-    font-weight: normal;
-}
 
 
-/* PROJECTS */
+/* Proyectos */
 .img-demoPage
 {
-    min-width: 25rem;
     width: 100%;
+    min-width: 25rem;
+    max-height: 360px;
     border-radius: 8px;
+    object-fit: contain;
     
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);
@@ -109,35 +81,10 @@ body
     object-fit: fill;
 }
 
-/* MISC PROJECTS */
-.projects-misc
-{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-}
-@media(min-width: 768px)
-{
-    .projects-misc {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media(min-width: 1200px)
-{
-    .projects-misc {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+
 
 
 /* CONTACT */
-.contact-form
-{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 50rem;
-}
-
 .contact-img-logo-container
 {
     width: min-content;
@@ -167,3 +114,23 @@ body
     background: linear-gradient(25deg, rgba(0, 0, 35, 1) 20%, rgba(111, 51, 134, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000023", endColorstr="#6f3386", GradientType=1);
 }
+
+
+/* Bootstrap ext */
+.btn { transition: all .2s ease; }
+.btn-unstyled
+{
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.bg-white { background-color: white; }
+
+.text-pre-line { white-space: pre-line; }
+
+.cursor-pointer { cursor: pointer; }
+
+/* Fixes */
+button i, a i { pointer-events: none; }
