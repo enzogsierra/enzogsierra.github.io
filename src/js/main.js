@@ -1,46 +1,40 @@
 // Cuando hace click en el button de darkmode
-function onDarkMode()
+function onToggleDarkMode()
 {
-    // Main
-    const body = document.querySelector("body");
-    body.classList.toggle("bg-dark");
-    body.classList.toggle("text-white");
-    
+    const html = document.documentElement;
 
-    // Muted texts
-    document.querySelectorAll(".text-muted").forEach(input =>
+    if(html.getAttribute("data-bs-theme") == "dark") // Modo oscuro activo, pasar los btns light a dark
     {
-        input.classList.toggle("text-muted");
-    });
+        document.querySelectorAll(".btn-light").forEach(btn =>
+        {
+            btn.classList.remove("btn-light");
+            btn.classList.add("btn-dark");
+        });
 
+        document.querySelectorAll(".btn-outline-light").forEach(btn =>
+        {
+            btn.classList.remove("btn-outline-light");
+            btn.classList.add("btn-outline-dark");
+        });
 
-    // Cards
-    document.querySelectorAll(".card").forEach(card =>
+        html.setAttribute("data-bs-theme", "light");
+    }
+    else // Modo claro activo, pasar los btns dark a light
     {
-        card.classList.toggle("text-bg-dark");
-        card.classList.toggle("border-secondary");
-    });
+        document.querySelectorAll(".btn-dark").forEach(btn =>
+        {
+            btn.classList.remove("btn-dark");
+            btn.classList.add("btn-light");
+        });
 
+        document.querySelectorAll(".btn-outline-dark").forEach(btn =>
+        {
+            btn.classList.remove("btn-outline-dark");
+            btn.classList.add("btn-outline-light");
+        });
 
-    // Bottom borders
-    document.querySelectorAll(".border-bottom").forEach(border =>
-    {
-        border.classList.toggle("border-secondary");
-    });
-
-
-    // Dark & light buttons
-    document.querySelectorAll(".btn-dark, .btn-light").forEach(btn => 
-    { 
-        btn.classList.toggle("btn-dark");
-        btn.classList.toggle("btn-light");
-    });
-
-    document.querySelectorAll(".btn-outline-dark, .btn-outline-light").forEach(btn => 
-    { 
-        btn.classList.toggle("btn-outline-dark");
-        btn.classList.toggle("btn-outline-light");
-    });
+        html.setAttribute("data-bs-theme", "dark");
+    }
 }
 
 
@@ -57,7 +51,7 @@ function onDemoPageClick()
     {
         icon: 'info',
         title: 'Antes de...',
-        text: "Algunas páginas demo son solo snapshots visuales, no intentan imitar la funcionalidad de la misma.",
+        text: "Los sitios demo son solo snapshots visuales, no intentan imitar el funcionamiento completo del proyecto.",
         showCancelButton: false,
         confirmButtonText: 'Entendido'
     })
@@ -65,10 +59,10 @@ function onDemoPageClick()
     {
         if(result.isConfirmed)
         {
-            const link = e.target.parentElement.getAttribute("href");
-            window.open(link, ":blank");
+            const a = e.target;
+            const href = a.getAttribute("href");
+            window.open(href, ":blank");
+            demoPageAlert = true;
         }
     });
-
-    demoPageAlert = true;
 }

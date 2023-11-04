@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="light">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Enzo Sierra - Desarrollador Web</title>
-        <meta name="description" content="Desarrollador web y aplicaciones de escritorio con más de dos años de experiencia">
-        <meta name="keywords" content="programador web, diseñador web, desarrollador web, desarrollador de software, desarrollador de aplicaciones de escritorio, desarrollador de programas, argentina">
+        <title>Enzo Sierra - Desarrollador web, Analista de Sistemas</title>
+        <meta name="description" content="Desarrollador Web implementando Java Spring Framework con más de 2 años de experiencia. Analista de Sistemas.">
+        <meta name="keywords" content="java, web, programador, diseñador, desarrollador, analista de sistemas, spring boot, spring framework, software, aplicaciones de escritorio, programas, argentina">
         <meta name="author" content="Enzo Sierra">
         <meta name="language" content="Spanish">
         <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
         <link rel="canonical" href="https://enzogsierra.github.io/">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="/src/css/bootstrap.css">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
         <link rel="stylesheet" href="/src/css/layout.css">
@@ -28,17 +29,19 @@
         <header class="header py-4">
             <div class="container d-flex flex-column justify-content-between gap-4" style="height: 80vh;">
                 <div class="d-flex align-items-center justify-content-between gap-4">
-                    <i class="bx bx-moon display-5" id="darkMode-btn" title="Alternar modo oscuro" onclick="onDarkMode()"></i>
+                    <button class="btn-unstyled btn-darkmode-toggler" type="button" onclick="onToggleDarkMode()" title="Alternar modo oscuro">
+                        <i class="bx bx-moon display-6"></i>
+                    </button>
 
                     <nav class="d-flex justify-content-center gap-4">
                         <a href="https://github.com/enzogsierra" class="header-link-icon" target="_blank" title="Github" rel="external nofollow noopener noreferrer">
                             <i class="bx bxl-github align-middle"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/enzogsierra/" class="header-link-icon" target="_blank" title="LinkedIn" rel="external nofollow noopener noreferrer">
-                            <i class="bx bxl-linkedin align-middle"></i>
+                            <i class="bx bxl-linkedin bx-tada align-middle"></i>
                         </a>
                         <a href="mailto:enzogsierra@gmail.com" class="header-link-icon" title="Enviar email" rel="external nofollow noopener noreferrer">
-                            <i class="bx bx-envelope bx-tada align-middle"></i>
+                            <i class="bx bx-envelope align-middle"></i>
                         </a>
                     </nav>
     
@@ -47,14 +50,14 @@
 
                 <div>
                     <div class="mb-3">
-                        <h1 class="mb-0 display-5 fw-bold text-white text-uppercase">Enzo Sierra</h1>
-                        <h4 class="mb-0 text-uppercase" style="color: #d667ff;">Desarrollador web</h4>
+                        <p class="mb-0 fs-5 fw-semibold text-uppercase" style="color: #d667ff;">Desarrollador web</p>
+                        <h1 class="mb-0 display-1 fw-bold text-white text-uppercase">Enzo Sierra</h1>
                     </div>
 
                     <div class="d-flex gap-2" style="max-width: 24rem;">
-                        <a href="#contacto" class="btn btn-primary w-100 fw-semibold">
-                            <i class="bx bx-chat align-middle"></i>
-                            <span class="align-middle">Contacto</span>
+                        <a href="#proyectos" class="btn btn-primary w-100 fw-semibold">
+                            <i class="bx bxs-briefcase align-middle"></i>
+                            <span class="align-middle">Mis proyectos</span>
                         </a>
                         <a href="/src/assets/cv_enzosierra.pdf" class="btn btn-danger w-100 fw-semibold" target="_blank">
                             <i class="bx bx-spreadsheet align-middle"></i>
@@ -69,12 +72,12 @@
 
 
         <!-- Proyectos destacados -->
-        <main class="container my-5">
-            <h2 class="fw-medium text-uppercase text-center">Mis proyectos destacados</h2>
+        <section class="container my-5" id="proyectos">
+            <h2 class="fs-1 fw-medium text-uppercase text-center">Mis proyectos destacados</h2>
 
             <div id="proyectos_container"></div>
             <script src="/src/js/Proyectos.js" type="text/babel" defer></script>
-        </main>
+        </section>
 
 
         <!-- Otros proyectos -->
@@ -88,8 +91,8 @@
 
 
         <!-- Contacto -->
-        <section class="container mb-5">
-            <h2 class="fw-medium text-uppercase text-center">Contacto</h2>
+        <section class="container mb-5" id="contacto">
+            <h2 class="fs-1 fw-medium text-uppercase text-center">Contacto</h2>
             <h5 class="text-center text-muted">Puedes contactarme a través de los siguientes medios</h5>
 
             <div class="mt-5 d-flex justify-content-center gap-1">

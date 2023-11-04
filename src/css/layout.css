@@ -4,8 +4,8 @@
 body
 {
     font-family: 'Montserrat', sans-serif;
-    transition: text-color .3s ease;
-    transition: background-color .3s ease;
+    transition: text-color .3s ease-in;
+    transition: background-color .3s ease-in;
 }
 
 
@@ -20,13 +20,12 @@ body
 }
 
 
-#darkMode-btn
+.btn-darkmode-toggler
 {
-    color:#ffffff; 
-    cursor: pointer;
-    transition: all .2s ease;
+    color:#ffffff;
+    transition: color .2s ease, transform .2s ease;
 }
-#darkMode-btn:hover
+.btn-darkmode-toggler:hover
 {
     color: dimgrey;
     transform: scale(1.2);
@@ -41,18 +40,18 @@ body
     line-height: 1.7rem;
     border-radius: 50%;
     
-    transition: background .3s ease;
+    transition: background-color .3s ease;
 }
 .header-link-icon:hover
 {
     color: white;
-    background: #149ddd;
+    background-color: #149ddd;
 }
 
 
 
 /* Proyectos */
-.img-demoPage
+.proyecto-imagen
 {
     width: 100%;
     min-width: 25rem;
@@ -60,28 +59,19 @@ body
     border-radius: 8px;
     object-fit: contain;
     
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 0px 1px #888;
+    -webkit-box-shadow: 0px 0px 0px 1px #888;
+    -moz-box-shadow: 0px 0px 0px 1px #888;
 
     transition: all .3s ease;
 }
-.img-demoPage:hover
+.proyecto-imagen:hover
 {
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 5px #888;
+    -webkit-box-shadow: 0px 0px 10px 5px #888;
+    -moz-box-shadow: 0px 0px 10px 5px #888;
     transform: scale(1.025);
 }
-.img-logo
-{
-    margin-bottom: .4rem;
-    width: 3rem;
-    height: 2rem;
-    object-fit: fill;
-}
-
-
 
 
 /* CONTACT */
@@ -117,7 +107,7 @@ body
 
 
 /* Bootstrap ext */
-.btn { transition: all .2s ease; }
+.btn { transition: color .2s ease, background-color .2s ease; }
 .btn-unstyled
 {
     border: 0;
@@ -126,11 +116,9 @@ body
     text-decoration: none;
 }
 
-.bg-white { background-color: white; }
-
 .text-pre-line { white-space: pre-line; }
 
 .cursor-pointer { cursor: pointer; }
 
 /* Fixes */
-button i, a i { pointer-events: none; }
+.btn > * { pointer-events: none; }
