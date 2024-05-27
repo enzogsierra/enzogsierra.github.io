@@ -26,14 +26,16 @@ export default function Contact()
                     {social.map((media, index) =>
                     {
                         return (
-                            <div className="d-flex flex-column align-items-center gap-2" key={index} style={{width: "100%", maxWidth: "15rem"}}>
-                                <a href={media.href} className="text-decoration-none">
+                            <div className="d-flex flex-column align-items-center gap-2 scale scale-2" key={index} style={{width: "100%", maxWidth: "15rem"}}>
+                                <a href={media.href} className="text-decoration-none" target="_blank" rel="external noopener noreferrer" title={media.title}>
                                     <div className="p-4 d-flex align-items-center justify-content-center border rounded-circle" style={{width: "8rem", height: "8rem"}}>
                                         <img src={media.imgPath} className="w-100" alt={`Logo de ${media.brand}`} title={media.brand}/>
                                     </div>
                                 </a>
 
-                                <h6 className="mb-0 fs-5">{media.text}</h6>
+                                <a href={media.href} className="link-body-emphasis" target="_blank" rel="external noopener noreferrer" title={media.title}>
+                                    <h6 className="mb-0 fs-5">{media.text}</h6>
+                                </a>
                             </div>
                         );
                     })}

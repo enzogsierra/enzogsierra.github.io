@@ -125,7 +125,25 @@ export default function MainProjects()
     
     return (
         <main className="container-xl py-5" id="experiencia">
-            <h2 className="mb-4 fw-medium text-uppercase text-center">Experiencia profesional</h2>
+            <div className="mb-4">
+                <h2 className="fw-medium text-uppercase text-center">Experiencia profesional</h2>
+
+                <div className="d-flex flex-wrap justify-content-center gap-3">
+                    <a href={Socials.linkedin.link} className="btn btn-outline-primary px-4 fw-bold" target="_blank" rel="external noopener noreferrer">
+                        <div className="d-flex align-items-center justify-content-center gap-2">
+                            <i className={Socials.linkedin.icon}></i>
+                            <span>LinkedIn</span>
+                        </div>
+                    </a>
+
+                    <a href="/assets/cv_enzosierra.pdf" className="btn btn-danger px-5 fw-bold" target="_blank">
+                        <div className="d-flex align-items-center justify-content-center gap-2">
+                            <i className="bi bi-file-earmark-person-fill"></i>
+                            <span>CV</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
             {projects && projects.map((project, index) =>
             {
@@ -135,24 +153,6 @@ export default function MainProjects()
                     </React.Fragment>
                 );
             })}
-
-            <div className="my-3">
-                <div className="d-flex flex-wrap justify-content-center gap-3">
-                    <a href={Socials.linkedin.link} className="btn btn-lg btn-primary px-4 fw-semibold" target="_blank" rel="external noopener noreferrer">
-                        <div className="d-flex align-items-center justify-content-center gap-2">
-                            <i className={Socials.linkedin.icon}></i>
-                            <span>LinkedIn</span>
-                        </div>
-                    </a>
-
-                    <a href="/assets/cv_enzosierra.pdf" className="btn btn-lg btn-danger px-4 fw-semibold" target="_blank">
-                        <div className="d-flex align-items-center justify-content-center gap-2">
-                            <i className="bi bi-card-list"></i>
-                            <span>Ver CV</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
         </main>
     );
 }

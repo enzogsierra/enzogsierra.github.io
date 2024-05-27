@@ -31,16 +31,17 @@ export default function Header()
                     </div>
 
                     <div className="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
-                        <a href="#experiencia" className="btn btn-primary px-5 fw-semibold">
+                        <a href="#contacto" className="btn btn-primary px-5 fw-semibold">
                             <div className="d-flex align-items-center justify-content-center gap-2">
-                                <i className="bi bi-suitcase-lg-fill"></i>
-                                <span>Mis proyectos</span>
+                                <i className="bi bi-chat-left-dots"></i>
+                                <span>Contacto</span>
                             </div>
                         </a>
-                        <a href="/assets/cv_enzosierra.pdf" className="btn btn-danger px-4 fw-semibold" target="_blank">
+
+                        <a href="#experiencia" className="btn btn-danger px-4 fw-semibold">
                             <div className="d-flex align-items-center justify-content-center gap-2">
-                                <i className="bi bi-card-list"></i>
-                                <span>CV</span>
+                                <i className="bi bi-suitcase-lg-fill"></i>
+                                <span>Proyectos</span>
                             </div>
                         </a>
                     </div>

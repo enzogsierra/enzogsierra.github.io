@@ -54,9 +54,9 @@ export default function SideProjects()
             {
                 name: "Snake Game",
                 description: "Recreación del mítico juego 'Snake' para escritorio. Tiene sistema de colisiones y puntaje",
-                imagePath: "snakegame.jpg",
-                repositoryName: "snakegame",
-                application: "https://enzogsierra.github.io/snakegame/releases",
+                imagePath: "snake-game.jpg",
+                repositoryName: "snake-game",
+                application: "https://github.com/enzogsierra/snake-game/releases",
                 stacks: [Stacks.springboot, Stacks.mysql, Stacks.bootstrap, Stacks.javascript, Stacks.jquery]
             },
         ]);

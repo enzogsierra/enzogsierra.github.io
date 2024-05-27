@@ -34,8 +34,8 @@ export default function MainProject({project})
                             <h4 className="mb-0 fs-5 fw-bold">{project.name}</h4>
 
                             {project.instagram && 
-                                <a href={"https://www.instagram.com" + project.instagram} className="btn-unstyled lh-1" target="_blank" rel="noreferrer" title="Instagram">
-                                        <i className="bi bi-instagram fs-5 icon-instagram"></i>
+                                <a href={"https://www.instagram.com" + project.instagram} className="btn-unstyled lh-1 text-danger" target="_blank" rel="external noopener noreferrer" title="Instagram">
+                                    <i className="bi bi-instagram fs-5 icon-instagram"></i>
                                 </a>
                             }
                         </div>

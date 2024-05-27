@@ -4,12 +4,12 @@ import {Socials} from "../utils/Socials";
 export default function SideProject({project})
 {
     return (
-        <div className="card shadow">
+        <div className="card border-light shadow-lg">
             <img src={"/img/sideprojects/" + project.imagePath} className="card-img-top border-bottom" alt="Imagen del proyecto"/>
             
             <div className="card-body">
                 <h5 className="card-title text-uppercase fw-semibold">{project.name}</h5>
-                <p className="card-text text-muted text-pre-line">{project.description}</p>
+                <p className="card-text text-dark text-pre-line">{project.description}</p>
 
                 <div className="my-3 d-flex flex-wrap gap-3 d-none">
                     {project.stacks && project.stacks.map((stack, index) =>
@@ -28,7 +28,7 @@ export default function SideProject({project})
 
                 <div className="d-flex flex-wrap justify-content-start gap-2">
                     {project.repositoryName &&
-                        <a href={Socials.github.link + "/" + project.repositoryName} className="btn btn-primary fw-semibold" target="_blank"rel="noopener noreferrer">
+                        <a href={Socials.github.link + "/" + project.repositoryName} className="btn btn-sm btn-primary fw-semibold" target="_blank"rel="noopener noreferrer">
                             <div className="btn-icon gap-2">
                                 <i className={Socials.github.icon}></i>
                                 <span>Código</span>
@@ -37,10 +37,19 @@ export default function SideProject({project})
                     }
 
                     {project.demoPage &&
-                        <a href={project.demoPage} className="btn btn-outline-dark fw-semibold" target="_blank"rel="noopener noreferrer">
+                        <a href={project.demoPage} className="btn btn-sm btn-outline-dark fw-semibold" target="_blank"rel="noopener noreferrer">
                             <div className="btn-icon gap-2">
                                 <i className="bi bi-globe-americas"></i>
                                 <span>Sitio demo</span>
+                            </div>
+                        </a>
+                    }
+
+                    {project.application &&
+                        <a href={project.application} className="btn btn-sm btn-outline-dark fw-semibold" target="_blank"rel="noopener noreferrer">
+                            <div className="btn-icon gap-2">
+                                <i className="bi bi-box"></i>
+                                <span>Aplicación</span>
                             </div>
                         </a>
                     }
