@@ -1,0 +1,25 @@
+export const Stacks =
+{
+    ajax:           {name: "AJAX", icon: "ajax.png"},
+    api:            {name: "API", icon: "api.png"},
+    aws:            {name: "AWS", icon: "aws.png", title: "Amazon Web Services"},
+    bootstrap:      {name: "Bootstrap", icon: "bootstrap.png", title: "Bootstrap 5"},
+    css:            {name: "CSS", icon: "css.png", title: "CSS3"},
+    sass:           {name: "SASS", icon: "sass.png", title: "SASS"},
+    html:           {name: "HTML", icon: "html.png", title: "HTML5"},
+    jquery:         {name: "JQuery", icon: "jquery.png"},
+    javascript:     {name: "JavaScript", icon: "javascript.png"},
+    mercadopago:    {name: "MercadoPago", icon: "mercadopago.png", title: "SDK de MercadoPago"},
+    mysql:          {name: "MySQL", icon: "mysql.png"},
+    nodejs:         {name: "Node.js", icon: "nodejs.png"},
+    react:          {name: "React", icon: "react.png", title: "Reactjs"},
+    reactnative:    {name: "React Native", icon: "react.png"},
+    expo:           {name: "Expo", icon: "expo.png", title: "Expo App"},
+    sqlite:         {name: "SQLite", icon: "sqlite.png"},
+    php:            {name: "PHP", icon: "php.png"},
+    mailchimp:      {name: "Mailchimp", icon: "mailchimp.png"},
+    restful:        {name: "RESTful API", icon: "restapi.png"},
+    springboot:     {name: "Spring Boot", icon: "springboot.png"},
+    vercel:         {name: "Vercel", icon: "vercel.png"},
+    github:         {name: "Git", icon: "github.png", title: "Git/GitHub"}
+};
